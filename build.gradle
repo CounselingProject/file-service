@@ -4,7 +4,7 @@ plugins {
 	id 'io.spring.dependency-management' version '1.1.6'
 }
 
-group = 'org.choongang'
+group = 'xyz.sangdam'
 version = '0.0.1-SNAPSHOT'
 
 java {
@@ -55,6 +55,8 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testRuntimeOnly 'com.h2database:h2'
 	runtimeOnly 'com.oracle.database.jdbc:ojdbc11'
+
+	implementation 'org.apache.httpcomponents.core5:httpcore5:5.3'
 
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
